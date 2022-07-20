@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="shortcut icon" type="image/png" href="Photos\android-chrome-512x512.png">
+<link rel="stylesheet" href="Css/styles.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('/Photos/img.jpg');
+
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        /* border: 2px solid beige; */
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 18px;
+    }
+
+    .left img {
+        filter: invert(100%);
+        width: 165px;
+        position: relative;
+        top: -50px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 19px;
+        position: relative;
+        bottom: 112px;
+        line-height: 15px;
+    }
+
+    .middle {
+        /* border: 2px solid beige; */
+        margin: 18px auto;
+        width: 50%;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        font-style: oblique;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 47px;
+        font-size: 25px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: 3px underline;
+        color: grey;
+    }
+
+    .right {
+        /* border: 2px solid rgb(53, 53, 231); */
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+    }
+
+    .btn {
+        padding: 15px;
+        margin: 5px;
+        border: 2px solid;
+        border-radius: 15px;
+
+    }
+
+    .btn:hover {
+        background-color: #c2c1c0;
+        cursor: pointer;
+    }
+
+    .container {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 230px;
+        left: 25px;
+        margin: 2px auto;
+        padding: 2px 2px;
+        display: block;
+        width: 31%;
+        /* text-align: center; */
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        margin: 23px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    .group input {
+        margin: 4px 10px;
+        padding: 8px;
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        left: 60px;
+        bottom: 36px;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+
+    .group h3 {
+        position: relative;
+        right: -76px;
+        top: 13px;
+        font-size: 25px;
+    }
+
+    .submit {
+        position: relative;
+        right: -191px;
+        bottom: 9px;
+        padding: 7px 25px;
+        border-radius: 14px;
+        font-size: 25px;
+
+    }
+
+    .submit:hover {
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    /* h1{
+        border: 3px solid red;
+        text-align: center;
+        width: 500px;
+        margin: 13px auto;
+        display: block;
+        } */
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="/Photos/dumbel.png" alt="">
+            <div>Virendra Fitness</div>
+        </div>
+
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Enroll now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym in Shegaon</h1>
+        <form action="noaction.php">
+            <div class="group">
+                <h3>Name</h3>
+                <input type="text" placeholder="Enter your Answer">
+            </div>
+            <div class="group">
+                <h3>Phone Number</h3>
+                <input type="text" placeholder="Enter your Answer">
+            </div>
+            <div class="group">
+                <h3>Age</h3>
+                </h3> <input type="text" placeholder="Enter your Answer">
+            </div>
+            <div class="group">
+                <h3>Address</h3>
+                <input type="text" placeholder="Enter your Answer">
+            </div>
+            <button class="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

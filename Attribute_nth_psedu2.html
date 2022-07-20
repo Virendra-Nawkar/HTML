@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psedu Selector</title>
+    <style>
+        li {
+            width: 250px;
+            display: block;
+            margin: auto;
+        }
+
+        li:nth-child(odd) {
+            color: red;
+        }
+
+        li:nth-child(2) {
+            color: royalblue;
+        }
+
+        li:nth-child(even) {
+            color: rgb(31, 37, 4);
+        }
+
+        .form-control {
+            padding: 10px;
+        }
+
+        .item {
+            padding: 5px;
+            padding-left: 10px;
+            position: relative;
+            left: 5px;
+        }
+
+        input {
+            display: block;
+            position: relative;
+            left: 104px;
+        }
+        input[type='search']{
+            border: 2px solid black;
+        }
+        input[type='search']:hover{
+            border: 2   px solid red;
+        }
+
+        .input {
+            position: relative;
+            top: 19px;
+        }
+
+        .container {
+            padding: 31px;
+            padding-top: 0px;
+            width: 250px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <div class="input">&#x02022; &nbsp;Name</div>
+            <input type="text" placeholder="Enter Your text">
+            <div class="input"> &#x02022; &nbsp;Password</div>
+            <input type="password" placeholder="Enter your Password">
+            <div class="input">&#x02022; &nbsp;SearchBox</div>
+            <input type="search" placeholder="&#128269; Search">
+        </form>
+        <li class="item" id="item1">Item1</li>
+        <li class="item" id="item2">Item2</li>
+        <li class="item" id="item3">Item3</li>
+        <li class="item" id="item4">Item4</li>
+        <li class="item" id="item5">Item5</li>
+        <li class="item" id="item6">Item6</li>
+        <li class="item" id="item7">Item7</li>
+        <li class="item" id="item8">Item8</li>
+
+</body>
+
+</html>

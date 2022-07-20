@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users form</title>
+</head>
+
+<body>
+    <h2>in this code we are making a form</h2>
+
+    <form action="backend.php">
+        <!-- herer name="xxxx" indicates the stored location in the php file -->
+        <div>
+            <label for="name">
+                Name: <input type="text" name="myName" id="name"></label>
+        </div>
+        <br>
+        <!-- here we have added the label in the name section to add label keep the following standard format
+        but keep in mind that the name in label must be same as in the name in ID
+      <div>
+          <label for="name">
+        Name: <input type="text" name="myName" id="name">
+          </label>
+    </div>
+    <br>
+    <br>-->
+        <div>
+            Roll: <input type="text" roll="roll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" email="email">
+        </div>
+        <br>
+        <div>
+            Password: <input type="password">
+        </div>
+        <br>
+
+        <div>
+            are you elidgable: <input type="checkbox" name="mycheckbox">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="UsersGender"> Female: <input type="radio" name="usersGender">
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            Write about yourself:<br> <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="name1">
+                Name: <input type="text" name="myName" id="name1">
+            </label>
+        </div>
+        <br>
+        <!--for the dropbox type you will have to use the select function -->
+        <div>
+            <label for="Car">
+                Car: <select name="myCar" id="Car">
+                    <option value="select" selected>choose</option>
+                    <option value="Benz">Benz</option>
+                    <option value="Fortuner">Fortuner</option>
+                    <option value="Inova">Inova</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            Press Submit Button <input type="submit"> <br><br>
+            To reset the form <input type="reset">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>

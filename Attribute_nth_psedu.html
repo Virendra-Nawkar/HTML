@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and  nth spudo </title>
+</head>
+<style>
+    .container{
+        display: block;
+        width: 235px;
+        margin: auto;
+        padding: 25px;
+    }
+    .input{/*[type='text']{ */
+        padding: 10px;
+        margin: 10px;
+    }
+    a:hover{
+        text-decoration-color: rgb(143, 206, 206);
+        /* text-decoration: none; */
+    }
+    a[target]{
+        font-size: 52px;
+        text-align: center;
+    }
+    li:nth-child(odd){
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+    <form action="" class="form-control"></form>
+    <input type="text" placeholder="Enter your text Here">
+    <input type="password" placeholder="Enter your password Here">
+    <input type="submit" name="submit">
+        <li class="item" id="item1">Item1</li>
+        <li class="item" id="item2">Item2</li>
+        <li class="item" id="item3">Item3</li>
+        <li class="item" id="item4">Item4</li>
+    </div>
+</body>
+</html> 

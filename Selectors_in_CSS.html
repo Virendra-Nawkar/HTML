@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <link rel="shortcut icon" type="image/png" href="logo\apple.ico">
+    <style>
+        p, h1 {
+            color: blue;
+        }
+
+        #SP {
+            color: chocolate;
+        }
+
+        .Mainheading {
+            color: orange;
+            border-style: ridge;
+            size: 20mm;
+            text-align: center;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is a short HTMl note on CSS selector</h3>
+
+    <h1><span class="Mainheading">CSS Selectors</span></h1>
+
+    <p>This is the first paragarph of the web page</p>
+    <P id="SP">this is the secound paragarph the web page</P>
+    <style>
+        .AA {
+            color: darkorchid;
+        }
+    </style>
+    <p class="AA">this is paragaph with the class in it </p>
+    <h1 class="AA">This is the Heading</h1>
+
+    <style>
+        .h1 {
+            border-bottom-style: dashed;
+        }
+
+        .h2 {
+            border-bottom-color: red;
+        }
+
+        .h3 {
+            color: lawngreen;
+        }
+
+        .pleasent_colour {
+            color: magenta;
+            padding-block: initial;
+        }
+
+        #h1 {
+            font-style: italic;
+        }
+
+        span {
+            border-style: dotted;
+            border-color: lawngreen;
+        }
+    </style>
+    <h1 class="h1 h2 h3">This is H1 heading</h1>
+    <h2 id="h1" class="pleasent_colour">Hello</h2>
+    <form class="pleasent_colour">
+        Name: <input type="text"><br><br>
+    </form>
+    <span>this is the text in span</span>
+</body>
+
+</html>

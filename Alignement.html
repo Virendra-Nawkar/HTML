@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        background-color:salmon;
+    }
+    .container{
+        margin: 50px auto;
+        padding: 10px;
+        border: 5px solid #4233468f;
+        width: 900px;
+    }
+    .item {
+        border-style: double;
+        border-color: rgb(53, 50, 50);
+        margin: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        background-color: #b9c8f4;
+        border-spacing: 10px;
+        border-width: 5px;
+    }
+    #fruit{
+        float: left;
+        width: 40%;  
+    }
+    #computers{
+        float: left;
+        width: 40%;  
+    }
+    
+    #Stationary{
+        float:inline-end;
+        width: 40%;  
+    }
+
+    #Glasses{
+        float:right;
+        width: 40%;  
+    }
+    h3 {
+        text-align: center;
+        color: #377327;
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ephesis&family=Lobster&display=swap');
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Ephesis', cursive;
+        font-family: 'Lobster', cursive;
+    }
+
+    p {
+        text-align: center;
+        color: rgb(255 235 210);
+        font-size: 30px;
+    }
+    #secoundpara{
+        font-size: initial;
+        color: black;
+        font-size: 20px;
+    }
+
+    .class {
+        /* margin: 20px; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara">This are the content in the fruits</p>
+            <p id="secoundpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime temporibus sapiente reprehenderit sint ipsam doloremque provident autem unde ab quis repellendus inventore hic atque mollitia quidem eveniet dolor iste accusamus, asperiores dicta odit? Expedita, asperiores.</p>
+        </div>
+        <div id="Computers" class="item">
+            <h3>Computers</h3>
+            <p id="Computerpara">This are the content in the Computers</p>
+            <p id="secoundpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime temporibus sapiente reprehenderit sint ipsam doloremque provident autem unde ab quis repellendus inventore hic atque mollitia quidem eveniet dolor iste accusamus, asperiores dicta odit? Expedita, asperiores.</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Stationarypara">This are the content in the Stationary</p>
+            <p id="secoundpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime temporibus sapiente reprehenderit sint ipsam doloremque provident autem unde ab quis repellendus inventore hic atque mollitia quidem eveniet dolor iste accusamus, asperiores dicta odit? Expedita, asperiores.</p>
+        </div>
+        <div id="Glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="Glassespara">This are the content in the Glasses</p>
+            <p id="secoundpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime temporibus sapiente reprehenderit sint ipsam doloremque provident autem unde ab quis repellendus inventore hic atque mollitia quidem eveniet dolor iste accusamus, asperiores dicta odit? Expedita, asperiores.</p>
+        </div>
+    </div>
+</body>
+
+</html>

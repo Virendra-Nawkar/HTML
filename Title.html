@@ -1,0 +1,129 @@
+Imports System.Text.RegularExpressions
+
+Public Class Form1
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Validate()
+        TabControl1.SelectedTab = Subjects
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
+
+    End Sub
+
+    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Save_Click(sender As Object, e As EventArgs) Handles Save.Click
+        Dim isave As New SaveFileDialog
+        isave.Filter = "txt files(* .txt) |*.txt"
+        isave.FilterIndex = 2
+        isave.RestoreDirectory = False
+
+        If isave.ShowDialog() = DialogResult.OK Then
+            IO.File.WriteAllText(isave.FileName, TextBox3.Text)
+
+
+        End If
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+        Dim allowedChars As String = "0123456789"
+        If allowedChars.IndexOf(e.KeyChar) = -1 Then
+            ' Invalid Character
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ProgressBar1 = Visible
+        MsgBox("Your paymet is Successfull")
+        TabControl1.SelectedTab = Print
+        'If Not IsNumeric(Me.TextBox2.Text) Then
+        ' Me.ErrorProvider1.SetError(Me.TextBox2, "Enter Valid Card Details")
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim it As String
+        Dim it2 As String
+        Dim it3 As String
+        it = ListBox1.Text
+        it2 = ListBox2.Text
+        it3 = ListBox3.Text
+        TextBox3.AppendText("    " + vbNewLine)
+        TextBox3.AppendText(vbTab & Label1.Text + " :   " + TextBox1.Text + vbNewLine)
+        TextBox3.AppendText(vbTab & Label2.Text + " :   " + DateTimePicker1.Value + vbNewLine)
+        TextBox3.AppendText(vbTab & Label3.Text + " :   " + TextBox4.Text + vbNewLine)
+        TextBox3.AppendText(vbTab & Label4.Text + " :   " + TextBox7.Text + vbNewLine)
+        TextBox3.AppendText(vbTab & Label5.Text + " :   " + TextBox8.Text + vbNewLine)
+        TextBox3.AppendText(vbTab & Label6.Text + " :   " + it + vbNewLine)
+        TextBox3.AppendText(vbTab & Label8.Text + " :   " + it2 + vbNewLine)
+        TextBox3.AppendText(vbTab & Label9.Text + " :   " + it3 + vbNewLine)
+        ' MsgBox("itme selected in first label is " & it)
+
+    End Sub
+
+    Private Sub Label20_Click(sender As Object, e As EventArgs) Handles Label20.Click
+
+    End Sub
+
+    Private Sub Label21_Click(sender As Object, e As EventArgs) Handles Label21.Click
+
+    End Sub
+
+    Private Sub Information_Click(sender As Object, e As EventArgs) Handles Information.Click
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        TabControl1.SelectedTab = Payment
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
+
+    End Sub
+End Class

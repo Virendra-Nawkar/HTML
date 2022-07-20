@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice Page</title>
+</head>
+<style>
+    * {
+        font-size: 35px;
+        background-color: #12213a;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .left {
+        border: 2px solid black;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    /* .left img {
+        width: 240px;
+        position: relative;
+        top: -76px;
+        left: -326px;
+    } */
+    .left h2 {
+        position: relative;
+        top: 83px;
+        left: 18px;
+        z-index: 5;
+        color: #ffffe2;
+    }
+
+    .left img {
+        position: absolute;
+        top: -35px;
+        left: -53px;
+        size: 15px;
+        width: 230px;
+        height: 150px;
+        
+    }
+
+    .middle {
+        border: 2px solid black;
+        margin: 18px auto;
+        width: 50%;
+        display: block;
+        text-align: center;
+    }
+    
+    .right {
+        display: inline-block;
+        /* border: 2px solid black; */
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+    }
+
+    input {
+        /* width: 66%; */
+        border-radius: 26px;
+        border: 1px solid #ada9a9;
+        padding: 1% 6%;
+        margin: 1% 1%;
+        background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        outline: 0;
+        background-position: 12px;
+        background-size: 20px;
+        position: absolute;
+        top: -3px;
+        right: 79px;
+        width: 145px;
+        filter:invert(100%);
+    
+    }
+
+    .btn {
+        border-radius: 26px;
+        border: 1px solid #ada9a9;
+        padding: 1% 6%;
+        margin: -9% -6%;
+        background-image: url(https://www.clipartmax.com/png/middle/334-3348736_shopping-cart-svg-png-icon-free-download-shopping-cart-icon-svg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        outline: 0;
+        background-position: 12px;
+        background-size: 40px;
+        filter:invert(100%);
+        background-color: #12213a;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar a {
+        font-size: 30px;
+        color: rgb(180, 255, 255);
+        padding: 2px;
+        margin: 40px;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <h2>iStore</h2>
+                <img src="apple_logo.png" alt="">
+            
+            <!-- <img src="apple_logo.png" alt=""> -->
+        </div>
+        <div class="middle">
+
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">&nbsp; &nbsp; &nbsp; &nbsp;</button>
+            <input type="text" placeholder="&nbsp;&nbsp; Search">
+        </div>
+    </header>
+</body>
+
+</html>

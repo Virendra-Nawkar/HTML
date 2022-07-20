@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>istore</title>
+</head>
+<link rel="shortcut icon" type="image/png" href="logo\Apple.ico">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Explora&display=swap');
+</style>
+<style>
+    body {
+        background-color: #1D1D1F;
+    }
+
+    #Mainheading {
+        color: khaki;
+        text-align: center;
+        font-family: 'Explora', cursive;
+        font-size: 100px;
+        text-shadow: 2px 2px 4px red, 0 0 25px white, 0 0 50px rgb(255 0 198);
+
+    }
+
+    #Mainheading:hover {
+        text-shadow: 2px 2px 4px #ff1616, 0 0 25px white, 0 0 50px rgb(212 212 212);
+        cursor: pointer;
+    }
+
+    #Mainheading:hover {
+        font-size: 630%;
+    }
+
+    .MainBox {
+        width: 1900px;
+        margin: auto;
+    }
+
+    .item {
+        border: #ffffff;
+        border-style: double;
+        margin: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 25px;
+        padding: 20px;
+        padding-top: 0.5px;
+        background-position: center;
+        background-color: #959595;
+    }
+
+    h3,
+    p {
+        color: #ffdbdb;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    #Mac {
+        float: left;
+        width: 42%;
+    }
+
+    #iPhones {
+        float: right;
+        width: 42%;
+        position: relative;
+        bottom: 10px;
+    }
+
+    #iPhones h1:hover {
+        font-size: 78px;
+    }
+
+    #iPad h1:hover {
+        font-size: 78px;
+    }
+
+    #Mac h1:hover {
+        font-size: 78px;
+    }
+
+    #iWatch h1:hover {
+        font-size: 78px;
+    }
+
+    #iPad {
+        float: left;
+        width: 42%;
+        /* clear: both; */
+        position: relative;
+        top: 30px;
+    }
+
+    #iWatch {
+        float: right;
+        width: 42%;
+        /* clear: both; */
+    }
+
+    /* this is the subheading */
+    .Subheading {
+        color: #000000;
+        font-size: 75px;
+        text-align: center;
+        font-family: 'Bonheur Royale', cursive;
+    }
+
+    h3 {
+        color: #f4e9d1;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(255, 242, 241);
+    }
+
+    .navbar {
+        background-color: aqua;
+        border-radius: 18px;
+        
+
+    }
+
+    .navbar ul {
+        overflow: auto;
+    }
+
+    .navbar li {
+        float: left;
+        list-style: none;
+        margin: 1px 40px;
+        padding: 10px;
+        font-size: 40px;
+    }
+
+    .navbar input {
+        padding: 15px 15px;
+        padding-top: 33px;
+        border: 3px solid black;
+        border-radius: 50px;
+        text-align: center;
+        margin: auto;
+        float: right;
+    }
+
+    .navbar li a:hover {
+        color: red;
+        font-size: 42px;
+    }
+
+    .End {
+        color: #ffffffc7;
+        float: left;
+        padding-bottom: 1px;
+        padding-top: 1px;
+        text-align: center;
+        bottom: 0px;
+        width: 100%;
+        /* position: relative;
+        z-index: 34; */
+    }
+
+    .End:hover {
+        font-size: 25px;
+        color: #72f3ffc7;
+        cursor: pointer;
+
+    }
+
+    .copyright {
+        position: fixed;
+        bottom: 1px;
+        right: 10px;
+    }
+
+    .nav{
+        position:sticky;
+        top: 1px;
+        border:  2px black;
+    }
+</style>
+
+<body>
+    <!-- <div class="nav"> -->
+    <div class="nav">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="https://www.google.com/" target="_blank">Home</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPhones</a></li>
+                    <li><a href="#">ipads</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Macbook</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <!-- <div class="Search">
+                    <input type="text" name="search" placeholder="Search..">
+                </div> -->
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- </div> -->
+    <div class="MainBox">
+        <h1 id="Mainheading">
+            <a href="https://www.apple.com/in/" target="_balnk">Welcome to the Apple store</a>
+        </h1>
+        <div class="item" id="Mac">
+            <h1 class="Subheading"><a href="https://www.apple.com/in/mac/" target=”_blank”>Mac</a></h1>
+            <h3>This are our Mac products</h3>
+            <p>Macs are capable of all the same general functions as PCs, such as word processing, playing music and
+                videos, games.Most features require different programs than those on
+                a PC, however. Apple Macs have a number of advantages over PCs.
+            </p>
+        </div>
+        <div class="item" id="iPhones">
+            <h1 class="Subheading"><a href="https://www.apple.com/in/iphone/" target=”_blank”>iPhones</a></h1>
+            <h3>This are our iPhones products</h3>
+            <p>This technology is called multi-touch, and involves tapping, dragging, and even typing on a keyboard
+                picture shown on the screen. All iPhones run on a mobile operating system which Apple calls "iOS". A new
+                version of iOS comes out every year, each having more features than the one before.</p>
+        </div>
+        <div class="item" id="iPad">
+            <h1 class="Subheading"><a href="https://www.apple.com/in/ipad/" target=”_blank”>iPad</a></h1>
+            <h3>This are our iPad products</h3>
+            <p>The iPad is a small tablet computer made by Apple Inc. Apple first showed it on January 27 2010. It is
+                larger than a smartphone and smaller than a laptop computer. It has a multiple touch interface (use two
+                or more fingers to do certain things).
+            </p>
+        </div>
+        <div class="item" id="iWatch">
+            <h1 class="Subheading"><a href="https://www.apple.com/in/watch/" target=”_blank”>Apple Watch</a></h1>
+            <h3>This are our iAccessories products</h3>
+            <p>
+                Apple Watch can do what your other devices can’t because it’s on your wrist. When you wear it, you get a
+                fitness partner that measures all the ways you move, meaningful health insights and a connection to the
+                people and things you care about most.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="copyright">
+        <!-- <h2 class="End"><a href="https://www.instagram.com/virendra_nawkar/" target="_balnk">This website is created by
+                Virendra &#169;</a> </h2> -->
+        <h2 class="End">This website is created by Virendra &#169;</h2>
+    </div>
+</body>
+
+</html>
