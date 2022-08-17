@@ -3,134 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revision</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Google.css">
+    <style>
+
+    </style>
 </head>
-<style>
-    .Google img {
-        position: relative;
-        height: 70px;
-        width: 190px;
-    }
-
-    .box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 25rem;
-        padding: 2.5rem;
-        box-sizing: border-box;
-        border: 1px solid #dadce0;
-        -webkit-border-radius: 8px;
-        border-radius: 8px;
-
-    }
-
-    .box h2 {
-        margin: 0px 0 -0.125rem;
-        padding: 0;
-        color: #fff;
-        text-align: center;
-        color: #202124;
-        font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-    }
-
-    .box p {
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: .1px;
-        line-height: 1.5;
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
-    .box .inputBox {
-        position: relative;
-    }
-
-    .box .inputBox input {
-        width: 93%;
-        padding: 0.625rem 10px;
-        font-size: 1rem;
-        letter-spacing: 0.062rem;
-        margin-bottom: 1.875rem;
-        border: 1px solid #ccc;
-        background: transparent;
-        border-radius: 4px;
-
-    }
-
-    .box .inputBox label {
-        position: absolute;
-        top: 0;
-        left: 10px;
-        padding: 0.625rem 0;
-        font-size: 1rem;
-        color: grey;
-        pointer-events: none;
-        transition: 0.5s;
-    }
-
-    .box .inputBox input:focus~label,
-    .box .inputBox input:valid~label,
-    .box .inputBox input:not([value=""])~label {
-        top: -1.125rem;
-        left: 10px;
-        color: #1a73e8;
-        font-size: 0.75rem;
-        background-color: white;
-        height: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .box .inputBox input:focus {
-        outline: none;
-        border: 2px solid #1a73e8;
-    }
-
-    .box input[type="submit"] {
-        border: none;
-        outline: none;
-        color: #fff;
-        background-color: #1a73e8;
-        padding: 0.625rem 1.25rem;
-        cursor: pointer;
-        border-radius: 0.312rem;
-        font-size: 1rem;
-        float: right;
-    }
-
-    .box input[type="submit"]:hover {
-        background-color: #287ae6;
-        box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45), 0 1px 3px 1px rgba(66, 133, 244, 0.3);
-    }
-</style>
 
 <body>
     <div class="box">
-        <div class="Google">
-            <img src="Goo.png" alt="">
-            <p>Create your Google Account</p>
-            <form>
-                <div class="inputBox">
-                    <input type="text" name="First_Name" required>
+        <img src="Goo.png" alt="">
+        <p id="Create">Create your Google Account</p>
+        <form>
+            <div class="First">
+                <div class="inputBox" id="firstname">
+                    <input type="text" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
                     <label>First name</label>
                 </div>
-                <div class="inputBox">
-                    <input type="text" name="Last_Name" required>
-                    <label>last name</label>
+                <div class="inputBox" id="surname">
+                    <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
+                    <label>Last name</label>
                 </div>
-                <input type="submit" name="sign-in" value="Sign In">
+            </div>
+            <div class="inputBox" id="username">
+                <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <p id="you_can">You can use letters, numbers & periods</p>
+                <label>Username</label>
+            </div>
 
-            </form>
+            <div class="First">
+                <div class="inputBox">
+                    <input type="password" name="email" required onkeyup="this.setAttribute('value', this.value);"
+                        value="">
+                    <label>Passward</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="text" required onkeyup="this.setAttribute('value', this.value);"
+                        value="">
+                    <label>Confirm</label>
+                </div>
+                <p id="words">Use 8 or more characters with a mix of letters, numbers & symbols
+                </p>
+            </div>
+            <button id="sub" onclick="submit()">Submit</button>
+            <!-- <input type="submit" name="sign-in" value="Next" onclick="submit()"> -->
+        </form>
+        <img id="accont" src="google photo.png" </div>
 
-        </div>
+        <table id="tab" style="border: 2px solid black" ;>
+            <tr style="border: 2px solid black" ;>
+                <th style="border: 1px solid black" ;>name</th>
+                <th style="border: 1px solid black" ;>surname</th>
+                <th style="border: 1px solid black" ;>Email</th>
+            </tr>
+        </table>
     </div>
 </body>
+<script>
+ function submit(){
+      alert("1");
+        var name1 = document.getElementById("firstname").value;
+        var name2 = document.getElementById("surname").value;
+        var name3 = document.getElementById("username").value;
+
+        alert("2");
+        var taab = document.getElementById("tab");
+        var row = taab.insertRow(1);
+        var cel1 = row.insertCell(0);
+        var cel2 = row.insertCell(1);
+        var cel3 = row.insertCell(2);
+
+        alert("3");
+
+        cel1.innerHTML = name1;
+        cel2.innerHTML = name2;
+        cel3.innerHTML = name3;
+        alert("4");
+
+    }
+    </script>
 
 </html>

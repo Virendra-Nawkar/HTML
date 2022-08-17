@@ -1,0 +1,27 @@
+body {
+    background-color: aquamarine;
+}
+
+
+
+.box {
+    animation: box;
+    animation-duration: 1s;
+    animation-iteration-count: 50;
+    background-color: black;
+width: 5px;
+height: 5px;
+
+}
+    @keyframes box {
+        form {
+            width: 1%;
+            height: 5px;
+
+        }
+
+        to {
+            width: 100%;
+            height: 10px;
+        }
+    }

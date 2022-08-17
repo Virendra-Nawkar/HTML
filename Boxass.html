@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-conatiner {
+        border: 2px solid black;
+        width: 90%;
+        height: 800px;
+        flex-wrap: wrap;
+    }
+
+    .mainbox {
+        border: 2px solid black;
+        width: 100%;
+        height: 50%;
+    }
+
+    #box1 {
+        background-color: rgb(230, 161, 71);
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+
+    .clickbtn {
+        padding: 10px;
+        margin: 10px;
+        width: 50%;
+        align-items: center;
+    }
+    .createdbox_organge {
+        border: 2px solid black;
+        width: 10px;
+        height: 10px;
+        background-color: orange;
+        margin: 2px;
+        padding: 10px;
+    }
+
+    .createdbox_white {
+        border: 2px solid black;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        margin: 2px;
+        padding: 10px;
+    }
+
+    .createdbox_green {
+        border: 2px solid black;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        margin: 2px;
+        padding: 10px;
+    }
+
+    
+</style>
+
+<body>
+    <div class="flex-conatiner">
+        <div class="mainbox" id="box1"></div>
+        <div class="mainbox" id="box2">
+            <button class="clickbtn" id="Orange" onclick="Orange()">Orange</button>
+            <button class="clickbtn" id="White" onclick="White()">White</button>
+            <button class="clickbtn" id="Green" onclick="Green()">Green</button>
+            <button class="clickbtn" id="Reset" onclick="Reset()">Reset</button>
+            <button class="clickbtn" id="cal" onclick="cal()">cal</button>
+        </div>
+    </div>
+    <script>
+        function Reset() {
+            window.location.reload();
+        }
+        function Orange() {
+            // alert("hello1")
+            let newbox = document.createElement("newelement")
+
+            // alert("hello2")
+            newbox.setAttribute("class", "createdbox_organge")
+
+            // alert("hello3")
+            document.getElementById("box1").appendChild(newbox)
+        }
+
+        function White() {
+            // alert("hello1")
+            let newbox2 = document.createElement("newelement")
+
+            // alert("hello2")
+            newbox2.setAttribute("class", "createdbox_white")
+
+            // alert("hello3")
+            document.getElementById("box1").appendChild(newbox2)
+        }
+
+        function Green() {
+            // alert("hello1")
+            let newbox3 = document.createElement("newelement")
+
+            // alert("hello2")
+            newbox3.setAttribute("class", "createdbox_green")
+
+            // alert("hello3")
+            document.getElementById("box1").appendChild(newbox3)
+        }
+
+
+        
+    </script>
+</body>
+
+</html>

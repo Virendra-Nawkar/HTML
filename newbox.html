@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box0 {
+        width: 1400px;
+        height: 200px;
+        scroll-behavior:smooth;
+        overflow: auto;
+        margin: 0px;
+    }
+
+    #box1 {
+        width: 1400px;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        line-height: 2;
+        margin: 0px;
+
+        /* flex-direction: start-flex; */
+
+
+    }
+
+    #box2 {
+        border: 2px solid black;
+    }
+
+    .createdbox_organge {
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        background-color: orange;
+        line-height: 2;
+
+    }
+
+    .createdbox_white {
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        background-color: white;
+        line-height: 2;
+
+
+    }
+
+    .createdbox_green {
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        background-color: green;
+        line-height: 2;
+
+
+    }
+</style>
+
+<body>
+    <div id="box0">
+        <div id="box1"></div>
+    </div>
+    <div id="box2">
+        <button class="clickbtn" id="Orange" onclick="Orange()">Orange</button>
+        <button class="clickbtn" id="White" onclick="White()">White</button>
+        <button class="clickbtn" id="Green" onclick="Green()">Green</button>
+        <button class="clickbtn" id="Reset" onclick="Reset()">Reset</button>
+        <button class="clickbtn" id="cal" onclick="cal()">cal</button>
+        <div id="display"></div>
+    </div>
+    <script>
+
+        function Reset() {
+            window.location.reload();
+        }
+        var sum = 0;
+        function Orange() {
+            sum += 1;
+            // alert("hello1")
+            let newbox = document.createElement("newelement")
+
+            // alert("hello2")
+            newbox.setAttribute("class", "createdbox_organge")
+
+            // alert("hello3")
+            document.getElementById("box1").appendChild(newbox)
+        }
+        var Whitee = 0;
+        function White() {
+            Whitee += 1;
+            // alert("hello1")
+            let newbox2 = document.createElement("newelement")
+
+            // alert("hello2")
+            newbox2.setAttribute("class", "createdbox_white")
+
+            // alert("hello3")
+            document.getElementById("box1").appendChild(newbox2)
+        }
+        var greeen = 0;
+        function Green() {
+            greeen += 1;
+            // alert("hello1")
+            let newbox3 = document.createElement("newelement")
+
+            // alert("hello2")
+            newbox3.setAttribute("class", "createdbox_green")
+
+            // alert("hello3")
+            document.getElementById("box1").appendChild(newbox3)
+        }
+        function cal() {
+            document.getElementById("display").innerHTML = sum; 
+
+            var op = sum + Whitee + greeen;
+            alert(op);
+        }
+    </script>
+</body>
+
+</html>

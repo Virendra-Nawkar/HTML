@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button type="button"
+    onclick="document.getElementById('hello').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    
+    
+    <p id="demo"></p>
+
+    <p id="hello"></p>
+    <input type="text" id="hello" placeholder="hello" style="width:100%;">
+
+    <button type="button" onclick="document.getElementById('hello').innerHTML= "Hello yash bhai""
+</body>
+<script>
+    // alert("ayla jaaadu")
+    // // console.log("kya bolte yash bhai maje mien na")
+    // // document.write("kya bolte yash bhai maje mien na")
+    // var array = ["yash", "Vijay", "ganorkar"]
+    // array.push("Sumit");
+    // array.shift(array[0])
+
+
+    
+    // console.log(array)
+    // document.write(array)
+
+    var age = window.prompt("Enter your age: ");
+    alert("Your age is " + age);
+    if (age == 18) {
+        alert("you have entered your age 18")
+    } else if (age < 18) {
+        alert("your age is less than 18")
+    }
+    else {
+        alert("you age is greater than 18")
+    }
+</script>
+
+</html>

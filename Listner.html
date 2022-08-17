@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listners</title>
+</head>
+<body>
+    <button id="btn">Button</button>
+    <P id="hover">Hover over it</P>
+    <P id="effect">This is effect Section</P>
+</body>
+<script>
+    const x = document.getElementById("hover");
+    const y = document.getElementById("btn");
+
+    x.addEventListener("mouseover", mouseoverit);
+    x.addEventListener("mouseout", mouseout);
+    x.addEventListener("mousedown", mousedown);
+    x.addEventListener("mousemove", mousemove);
+    y.addEventListener("click", clickme);
+    
+    function mouseoverit(){
+        document.getElementById("effect").innerHTML += "MOveruse over it"+ "<br>";
+    }
+
+    function mouseout(){
+        document.getElementById("effect").innerHTML += "MOveruse out"+ "<br>";
+    }
+
+    function clickme(){
+        document.getElementById("effect").innerHTML += "Clicked"+ "<br>";
+    }
+
+    function mousedown(){
+        document.getElementById("effect").innerHTML += "mousedown"+ "<br>";
+    }
+
+    function mousemove(){
+        document.getElementById("effect").innerHTML += "mousemove"+ "<br>";
+    }
+</script>
+</html>
